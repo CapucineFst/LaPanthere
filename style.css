@@ -90,10 +90,10 @@ a:hover {
     right: 0;
 }
 
-.texture-paper::before {
+./*texture-paper::before {
     background: url("img/texture-paper.png");
     background-size: 280px 280px;
-}
+}*/
 
 .b-parallax {
     background-attachment: fixed;
@@ -123,7 +123,6 @@ a:hover {
 .d-bloc .navbar a,
 .d-bloc .navbar-brand,
 .d-bloc a .icon-sm,
-.d-bloc a .icon-md,
 .d-bloc a .icon-lg,
 .d-bloc a .icon-xl,
 .d-bloc h1 a,
@@ -136,11 +135,18 @@ a:hover {
     color: rgba(255, 255, 255, .6);
 }
 
+.d-bloc a .icon-md {
+    color: white;
+}
+
+.d-bloc a:hover .icon-md {
+    color: grey;
+}
+
 .d-bloc .a-btn:hover,
 .d-bloc .navbar a:hover,
 .d-bloc .navbar-brand:hover,
 .d-bloc a:hover .icon-sm,
-.d-bloc a:hover .icon-md,
 .d-bloc a:hover .icon-lg,
 .d-bloc a:hover .icon-xl,
 .d-bloc h1 a:hover,
@@ -647,11 +653,19 @@ h5,
 h6,
 p,
 label,
-.btn,
-a {
+.btn {
     font-family: "helvetica";
     font-weight: 400;
     color: #575757!important;
+}
+
+.col-sm-4 > ul > li >a {
+    text-decoration: underline;
+    color: white;
+}
+
+.col-sm-4 > ul > li >a:hover {
+    color: gray;
 }
 
 .container {
@@ -771,20 +785,21 @@ h4 {
 }
 
 .bgc-atomic-tangerine {
-    background-color: #F3976C;
+    background-color: #BE0E54;
 }
 
 .tc-white {
-    color: #F3976C!important;
+    color:white!important;
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
+    background: #BE0E54;
     color: #FFFFFF!important;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
+    background: #BE0E54!important;
+    filter: brightness(110%);
     color: #FFFFFF!important;
 }
 
@@ -797,11 +812,12 @@ h4 {
 }
 
 .ltc-atomic-tangerine {
-    color: #F3976C!important;
+    color: #BE0E54!important;
 }
 
 .ltc-atomic-tangerine:hover {
-    color: #c27956!important;
+    color: #BE0E54!important;
+    filter: brightness(110%);
 }
 
 .icon-dark-slate-blue {
@@ -809,16 +825,17 @@ h4 {
     border-color: #364577!important;
 }
 
-.bg-dots-bg {
+/*.bg-dots-bg {
     background-image: url("img/dots-bg.png");
-}
+}*/
 
-.bg-lines-h2-bg {
+/*.bg-lines-h2-bg {
     background-image: url("img/lines-h2-bg.png");
-}
+}*/
 
 .bg-banniere {
     background-image: url("img/agence-la-panthere.jpg");
+    background-size:100vw;
 }
 
 .bg-presentation {
@@ -1039,4 +1056,9 @@ h4 {
     .bloc-mob-center-text {
         text-align: center;
     }
+}
+.col-sm-4
+{
+    color: white;
+    margin-top: 20px;
 }
