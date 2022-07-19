@@ -726,16 +726,18 @@ p {
 
 h2 {
     font-size: 22px;
-    font-weight: 700;
+    font-weight: 100;
     line-height: 1.4em;
-    text-transform: uppercase;
 }
 
 h3 {
     font-size: 15px;
-    text-transform: uppercase;
-    font-weight: 500;
+    font-weight: 700;
     color: #333333!important;
+}
+
+.uppercase {
+    text-transform: uppercase;
 }
 
 .med-width-whitespace {
@@ -1072,4 +1074,15 @@ h4 {
 .column {
     display: flex;
     flex-direction: column;
+}
+
+#logo {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    background-color: #FFFFFF;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
 }
